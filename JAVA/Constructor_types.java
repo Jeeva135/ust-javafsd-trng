@@ -1,29 +1,24 @@
-package secondset;
+package week2day2;
 
-class This_construct
+public class Constructor_types 
 {
-	int val1;
-	int val2;
+	int a;
+	int b;
 	
-	//Default constructor
-	This_construct()
+	Constructor_types()
 	{
 		this(10,20);
-		System.out.println("Default constructor\n");
+		System.out.println("Inside default constructor\n");
 	}
 	
-	//Parameterized constructor
-	This_construct(int val1,int val2)
+	Constructor_types(int a,int b)
 	{
-		this.val1=val1;
-		this.val2=val2;
-		System.out.println("Parameterized constructor");
+		this.a=a;
+		this.b=b;
+		System.out.println("Inside parameterized constructor");
 	}
-}
-
-public class Constructor_types {
-	public static void main (String args[])
+	public static void main(String args[])
 	{
-		This_construct object=new This_construct();
+		Constructor_types object=new Constructor_types();
 	}
 }
