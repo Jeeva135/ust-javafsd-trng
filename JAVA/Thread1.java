@@ -1,0 +1,13 @@
+package week3day2;
+
+public class Thread1 extends Thread{
+	public static void main(String[] args) {
+		Thread1 t=new Thread1();
+		t.start();
+	}
+		public void run() {
+			System.out.println("Thread");
+		}
+	}
+
+
