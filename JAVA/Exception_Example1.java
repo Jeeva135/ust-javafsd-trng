@@ -5,7 +5,7 @@ import java.io.File;
 public class Exception_Example1 {
 	
 	public static void main (String args[]) {
-		File file=new File("newFile.txt");
+		File file=new File("C:\Users\ustjavafsdb219\newFile.txt");
 		
 		try {
 			boolean value =file.createNewFile();
