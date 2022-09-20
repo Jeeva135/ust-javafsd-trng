@@ -1,4 +1,4 @@
-package week3day6;
+package week4day1;
 
 import static org.junit.Assert.assertEquals;
 
@@ -6,6 +6,7 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import week3day4.Connection1;
@@ -18,8 +19,13 @@ public class TestCase1 {
 		assertEquals(2,2);
 		assertEquals(5,Connection1.calculate(2,3));
 	}
+	@Test(expected = NullPointerException.class)
+	
+	
+	
 	public void test1() {
-		assertEquals("abc","ABC");
+		String s=null;
+		assertEquals("ABC",s.toUpperCase());
 	}
 	@After
 	public void after() {
