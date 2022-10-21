@@ -1,0 +1,40 @@
+//To check Pangram
+
+
+
+import java.util.*;
+import java.lang.*;
+
+
+
+public class Main
+{
+    public static void main(String[] args) {
+        int count1=0,count2=0;
+        Scanner sc=new Scanner(System.in);
+        String str2=sc.nextLine();
+        //System.out.println(str);
+        String str=str2.toLowerCase();
+        //System.out.println(str);
+        for(char str1='a';str1<='z';str1++)
+        {
+            count1=0;
+                //System.out.println(str1);
+            for (int i=0;i<str.length();i++)
+            {
+                if (str1==str.charAt(i))
+                    count1++;
+                
+            }
+            if (count1>=1)
+            {
+                count2++;
+            }
+       }
+       System.out.println(count2);
+       if (count2==26)
+            System.out.println("Pangram");
+       else
+            System.out.println("Not Pangram");
+    }
+}

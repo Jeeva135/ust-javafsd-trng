@@ -1,0 +1,25 @@
+//Program to replace a character in a String
+
+
+
+import java.util.*;
+import java.lang.*;
+
+
+
+public class Main
+{
+    public static void main(String[] args) {
+        String str;
+        char c,ch;
+        Scanner sc=new Scanner (System.in);
+        System.out.println("Enter the string");
+        str=sc.nextLine();
+        System.out.println("Enter the character to be replaced");
+        c=sc.next().charAt(0);
+        System.out.println("Enter the character to replace");
+        ch=sc.next().charAt(0);
+        System.out.println(str.replace(c,ch));
+        
+    }
+}

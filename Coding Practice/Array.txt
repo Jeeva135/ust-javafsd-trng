@@ -1,0 +1,34 @@
+//Program to get last digits of an array,concatenate and check whether it is divisible by 10
+
+
+
+import java.util.*;
+import java.lang.*;
+
+
+
+class Main
+{
+    public static void main (String args[])
+    {
+        int n=0,rem=0,res=0;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        int arr[]=new int[n];
+        for (int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+            rem=arr[i]%10;
+       
+            res=rem+res*10;
+            
+        }
+        System.out.println("Res"+res);
+        
+        
+        if ((res%10)==0)
+            System.out.println("Yes");
+       else
+            System.out.println("No");
+    }       
+}
